@@ -1,0 +1,188 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inconsolata', monospace;
+    color: darkblue;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header,
+footer {
+    background-color:aquamarine;
+}
+
+header {
+    padding: 1em;
+}
+
+.container {
+    width: 80%;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px;
+}
+
+.page-title p {
+    text-align: right;
+}
+
+.page-logo {
+    object-fit: cover;
+    height: 100px;
+}
+
+main .container {
+    display: flex;
+    flex-direction: column;
+}
+
+.search {
+    margin: 2em 0;
+    display: flex;
+    justify-content: center;
+    gap: .5em
+}
+
+.search input,
+.search button {
+    font-family: 'Inconsolata', monospace;
+    letter-spacing: 1px;
+    color: darkblue;
+    background-color: #FFF;
+    border: 2px solid aquamarine;
+    border-radius: .25em;
+    padding: .5em 1em;
+}
+
+.search input {
+    font-weight: 700;
+    width: 350px;
+}
+
+.search button {
+    font-weight: 800;
+    color: darkblue;
+    background-color: #FFF;
+    
+}
+
+.search button:hover,
+.search button:focus {
+    cursor: pointer;
+    border: 2px solid darkblue;
+    background-color: darkblue;
+    color: #FFF;
+}
+
+.selected-recipe {
+    display: none;
+}
+
+.search-results {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin: 0 0 2em;
+}
+
+.recipe {
+    border: 2px solid aquamarine;
+    padding: .75em;
+    margin: .5em 0;
+    max-width: 33%;
+}
+
+.recipe:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+    border: none;
+}
+
+.recipe-img {
+    max-height: 30vh;
+    width: 100%;
+    object-fit:scale-down;
+    border-radius: .5em;
+}
+
+.recipe-title {
+    font-size: 1.45rem;
+    font-weight: 800;
+    margin: 0 0 .5em;
+}
+
+.recipe-servings {
+    font-size: 0.725rem;
+    font-weight: 400;
+    font-style: italic;
+    text-align: right;
+    margin: 0 0 .85em;
+    
+}
+
+.selected-recipe {
+    margin-bottom: 2em;
+}
+
+.ingredient {
+    display: flex;
+    gap : 1em;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.summary a {
+    text-decoration: none;
+    font-style: italic;
+    font-weight: 800;
+    color: aquamarine;
+}
+
+.summary a:hover {
+    text-decoration: underline;
+}
+
+.selected-recipe p {
+    margin-bottom: .5em;
+    line-height: 1.25em;
+}
+
+.selected-recipe .recipe-TTM {
+    text-align: right;
+}
+
+.ingredient p {
+    margin: 0.25em; 
+    font-size: .85em;   
+}
+
+.instructions {
+    margin-top: .75em;
+    line-height: 1.5em;
+}
+
+li {
+    margin-left: 2.5em;
+    padding-left: 1em;
+}
+
+footer {
+    font-size: .75rem;
+    font-weight: 300;
+    margin-top: auto;
+    text-align: center;
+    padding: 1.5em;
+}

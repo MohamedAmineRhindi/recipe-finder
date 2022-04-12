@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Recepe finder</title>
+        <link href="style.css" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@300;400;700;800&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <div class="container">
+                <div class="page-title">
+                    <h1>All the food you'd want</h1>
+                    <p><em>start exploring</em></p>
+                </div>
+                <img src="./img/logo.png" alt="page logo" class="page-logo">
+            </div>
+        </header>
+        <main>
+            <div class="container">
+                <form action="#" class="search" id="search">
+                    <input type="text" id="search-bar" required>
+                    <button id="search-btn" type="submit">Search</button>
+                </form>
+                <div class="selected-recipe" id="selected-recipe"></div>
+                <div id="search-results" class="search-results"></div>
+            </div>
+        </main>
+        <footer>
+            <div class="container">
+                <p><em>Powered by Recipe - Food - Nutrition API</em></p>
+            </div>
+        </footer>
+        <script src="index.js"></script>
+    </body>
+</html>
